@@ -1,0 +1,21 @@
+{
+	"private": true,
+	"name": "@company-ui/theme",
+	"version": "0.0.0",
+	"type": "module",
+	"main": "dist/index.esm.js",
+	"module": "dist/index.esm.js",
+	"exports": {
+		".": "./dist/index.esm.js"
+	},
+	"types": "types/index.d.ts",
+	"files": [
+		"dist/**.*"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"build": "yarn run build:esm && yarn run build:types",
+		"build:esm": "esbuild --bundle src/index.ts --outfile=dist/index.esm.js --platform=browser --target=esnext --format=esm --sourcemap --external:@stitches/react",
+		"build:types": "tsc --emitDeclarationOnly --skipLibCheck"
+	}
+}

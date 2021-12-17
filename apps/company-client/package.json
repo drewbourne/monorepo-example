@@ -1,0 +1,13 @@
+{
+	"name": "company-client",
+	"version": "0.0.0",
+	"scripts": {
+		"start": "vite dev",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@company-ui/button": "link:../../packages/@company-ui/button",
+		"@company-ui/theme": "link:../../packages/@company-ui/theme"
+	}
+}

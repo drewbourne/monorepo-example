@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"useDefineForClassFields": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"checkJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"composite": true,
+		"incremental": true,
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"lib": ["dom", "dom.iterable", "ESNext"],
+		"types": ["jest", "node"],
+		"jsx": "react-jsx",
+		"strict": true,
+		"strictNullChecks": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true
+	}
+}

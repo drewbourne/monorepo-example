@@ -1,0 +1,7 @@
+**/node_modules/**
+**/dist/**
+**/types/**
+**/src/**/*.js
+**/src/**/*.d.ts
+.eslintrc.js
+.yarn

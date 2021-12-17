@@ -1,0 +1,11 @@
+{
+	"extends": "../../../tsconfig.base.json",
+	"include": ["src/**/*"],
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dist",
+		"declarationDir": "types",
+		"baseUrl": "."
+	},
+	"references": [{ "path": "../../@company-ui/theme" }]
+}

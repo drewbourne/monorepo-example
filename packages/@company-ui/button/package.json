@@ -1,0 +1,26 @@
+{
+	"private": true,
+	"name": "@company-ui/button",
+	"version": "0.0.0",
+	"type": "module",
+	"main": "dist/Button.esm.js",
+	"module": "dist/Button.esm.js",
+	"exports": {
+		".": "./dist/Button.esm.js"
+	},
+	"types": "types/Button.d.ts",
+	"files": [
+		"dist/Button.esm.js",
+		"dist/Button.d.ts"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "yarn run build:bundle && yarn run build:types",
+		"build:bundle": "esbuild src/Button.tsx --bundle --outfile=dist/Button.esm.js --platform=browser --target=esnext --format=esm --sourcemap --external:@company-ui/theme --external:react --external:@stitches/react",
+		"build:types": "tsc --emitDeclarationOnly --skipLibCheck"
+	},
+	"dependencies": {
+		"@company-ui/theme": "link:../../@company-ui/theme"
+	}
+}
